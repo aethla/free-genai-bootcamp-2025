@@ -1,0 +1,16 @@
+Tried to keep my prompt short (with fewer subprompts).
+
+However, adding more rules for more specific instructions makes my sections chunky - i.e. conditions section. And both Mistral and Chatgpt auto model ignored the keep arabic in pure form (for verbs, no conjugations or tenses)
+
+Changing the word to be clearer - nonfinite verbs
+
+
+
+#Week 2 stuff
+
+1. Treat the AI like a junior dev
+2. Go step by step, create a plan and establish rules before any coding
+3. Use case example of Cursor AI
+4. Using WSL with Linux/Ubuntu env for easier dev
+5. The rules come in a file within the repo for the cursor ai to go through as it codes
+6. The process is iterative, and in chunks- plan is to develop one feature at a time (agile), then test before implement and then try new feature
