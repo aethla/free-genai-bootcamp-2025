@@ -82,18 +82,25 @@ class Db:
       words = self.load_json(data_json_path)
 
       for word in words:
-        # Insert the word into the words table
+        # Insert the word into the words table with language field
         cursor.execute('''
-          INSERT INTO words (kanji, romaji, english, parts) VALUES (?, ?, ?, ?)
-        ''', (word['kanji'], word['romaji'], word['english'], json.dumps(word['parts'])))
+          INSERT INTO words (original_text, transliteration, english, parts, language) 
+          VALUES (?, ?, ?, ?, ?)
+        ''', (
+            word['original_text'], 
+            word['transliteration'], 
+            word['english'], 
+            json.dumps(word['parts']),
+            word.get('language', 'undetected')  # Default to 'japanese' if not specified
+        ))
         
         # Get the last inserted word's ID
         word_id = cursor.lastrowid
 
-        # Insert the word-group relationship into word_groups table
+        # Insert the word-group relationship
         cursor.execute('''
           INSERT INTO word_groups (word_id, group_id) VALUES (?, ?)
-        ''', (word_id, core_verbs_group_id))
+        ''', (word_id, group_id))    
       self.get().commit()
 
       # Update the words_count in the groups table by counting all words in the group
@@ -116,18 +123,23 @@ class Db:
       self.setup_tables(cursor)
       self.import_word_json(
         cursor=cursor,
-        group_name='Core Verbs',
+        group_name='Japanese Verbs',
         data_json_path='seed/data_verbs.json'
       )
       self.import_word_json(
         cursor=cursor,
-        group_name='Core Adjectives',
+        group_name='Japanese Adjectives',
         data_json_path='seed/data_adjectives.json'
       )
 
       self.import_study_activities_json(
         cursor=cursor,
         data_json_path='seed/study_activities.json'
+      )
+      self.import_word_json(
+        cursor=cursor,
+        group_name='Arabic Verbs',
+        data_json_path='seed/data_verbs_ar.json'
       )
 
 # Create an instance of the Db class

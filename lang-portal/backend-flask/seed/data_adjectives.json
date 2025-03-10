@@ -6,7 +6,8 @@
     "parts": [
       { "kanji": "い", "romaji": ["i"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese"
   },
   {
     "kanji": "良い",
@@ -15,7 +16,8 @@
     "parts": [
       { "kanji": "良", "romaji": ["yo"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese"
   },
   {
     "kanji": "古い",
@@ -34,7 +36,8 @@
       { "kanji": "忙", "romaji": ["i","so","ga"] },
       { "kanji": "し", "romaji": ["shi"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese"
   },
   {
     "kanji": "新しい",
@@ -44,7 +47,8 @@
       { "kanji": "新", "romaji": ["a","ta","ra"] },
       { "kanji": "し", "romaji": ["shi"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese"
   },
   {
     "kanji": "悪い",
@@ -53,7 +57,8 @@
     "parts": [
       { "kanji": "悪", "romaji": ["wa","ru"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese"
   },
   {
     "kanji": "悲しい",
@@ -63,7 +68,8 @@
       { "kanji": "悲", "romaji": ["ka","na"] },
       { "kanji": "し", "romaji": ["shi"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese"
   },
   {
     "kanji": "嬉しい",
@@ -73,7 +79,8 @@
       { "kanji": "嬉", "romaji": ["u","re"] },
       { "kanji": "し", "romaji": ["shi"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese"
   },
   {
     "kanji": "太い",
@@ -82,7 +89,8 @@
     "parts": [
       { "kanji": "太", "romaji": ["fu","to"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese"
   },
   {
     "kanji": "細い",
@@ -91,7 +99,8 @@
     "parts": [
       { "kanji": "細", "romaji": ["ho","so"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese"
   },
   {
     "kanji": "面白い",
@@ -101,7 +110,8 @@
       { "kanji": "面", "romaji": ["o","mo"] },
       { "kanji": "白", "romaji": ["shi","ro"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese"
   },
   {
     "kanji": "同じ",
@@ -110,7 +120,8 @@
     "parts": [
       { "kanji": "同", "romaji": ["o","na"] },
       { "kanji": "じ", "romaji": ["ji"] }
-    ]
+    ],
+    "language": "japanese"
   },
   {
     "kanji": "汚い",
@@ -128,7 +139,8 @@
     "parts": [
       { "kanji": "綺", "romaji": ["ki"] },
       { "kanji": "麗", "romaji": ["rei"] }
-    ]
+    ],
+    "language": "japanese"
   },
   {
     "kanji": "暑い",
@@ -137,7 +149,8 @@
     "parts": [
       { "kanji": "暑", "romaji": ["a","tsu"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese"
   },
   {
     "kanji": "寒い",
@@ -146,7 +159,8 @@
     "parts": [
       { "kanji": "寒", "romaji": ["sa","mu"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese"
   },
   {
     "kanji": "好き",
@@ -155,7 +169,8 @@
     "parts": [
       { "kanji": "好", "romaji": ["su"] },
       { "kanji": "き", "romaji": ["ki"] }
-    ]
+    ],
+    "language": "japanese"
   },
   {
     "kanji": "涼しい",
@@ -165,7 +180,8 @@
       { "kanji": "涼", "romaji": ["su","zu"] },
       { "kanji": "し", "romaji": ["shi"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese"
   },
   {
     "kanji": "おいしい",
@@ -176,7 +192,8 @@
       { "kanji": "い", "romaji": ["i"] },
       { "kanji": "し", "romaji": ["shi"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese"
   },
   {
     "kanji": "大好き",
@@ -186,7 +203,8 @@
       { "kanji": "大", "romaji": ["dai"] },
       { "kanji": "好", "romaji": ["su"] },
       { "kanji": "き", "romaji": ["ki"] }
-    ]
+    ],
+    "language": "japanese"
   },
   {
     "kanji": "辛い",
@@ -195,7 +213,8 @@
     "parts": [
       { "kanji": "辛", "romaji": ["ka","ra"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+      ],
+    "language": "japanese"
   },
   {
     "kanji": "大味",
@@ -204,7 +223,8 @@
     "parts": [
       { "kanji": "大", "romaji": ["o","o"] },
       { "kanji": "味", "romaji": ["a","ji"] }
-    ]
+    ],
+    "language": "japanese"
   },
   {
     "kanji": "凄い",
@@ -213,7 +233,8 @@
     "parts": [
       { "kanji": "凄", "romaji": ["su","go"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese"
   },
   {
     "kanji": "素晴らしい",
@@ -225,7 +246,8 @@
       { "kanji": "ら", "romaji": ["ra"] },
       { "kanji": "し", "romaji": ["shi"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese"
   },
   {
     "kanji": "狭い",
@@ -234,7 +256,8 @@
     "parts": [
       { "kanji": "狭", "romaji": ["se","ma"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese"
   },
   {
     "kanji": "優しい",
@@ -244,7 +267,8 @@
       { "kanji": "優", "romaji": ["ya","sa"] },
       { "kanji": "し", "romaji": ["shi"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+      ],
+    "language": "japanese"
   },
   {
     "kanji": "近い",
@@ -253,7 +277,8 @@
     "parts": [
       { "kanji": "近", "romaji": ["chi","ka"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese" 
   },
   {
     "kanji": "詰らない",
@@ -264,7 +289,8 @@
       { "kanji": "ら", "romaji": ["ra"] },
       { "kanji": "な", "romaji": ["na"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese" 
   },
   {
     "kanji": "遠い",
@@ -273,7 +299,8 @@
     "parts": [
       { "kanji": "遠", "romaji": ["to","o"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese" 
   },
   {
     "kanji": "有名",
@@ -282,7 +309,8 @@
     "parts": [
       { "kanji": "有", "romaji": ["yu","u"] },
       { "kanji": "名", "romaji": ["me","i"] }
-    ]
+    ],
+    "language": "japanese" 
   },
   {
     "kanji": "長い",
@@ -291,7 +319,8 @@
     "parts": [
       { "kanji": "長", "romaji": ["na","ga"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese" 
   },
   {
     "kanji": "広い",
@@ -300,7 +329,8 @@
     "parts": [
       { "kanji": "広", "romaji": ["hi","ro"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese" 
   },
   {
     "kanji": "低い",
@@ -309,7 +339,8 @@
     "parts": [
       { "kanji": "低", "romaji": ["hi","ku"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese" 
   },
   {
     "kanji": "変",
@@ -317,7 +348,8 @@
     "english": "strange",
     "parts": [
       { "kanji": "変", "romaji": ["he","n"] }
-    ]
+    ],
+    "language": "japanese" 
   },
   {
     "kanji": "短い",
@@ -326,7 +358,8 @@
     "parts": [
       { "kanji": "短", "romaji": ["mi","ji","ka"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese" 
   },
   {
     "kanji": "高い",
@@ -335,7 +368,8 @@
     "parts": [
       { "kanji": "高", "romaji": ["ta","ka"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese" 
   },
   {
     "kanji": "小さい",
@@ -345,7 +379,8 @@
       { "kanji": "小", "romaji": ["chi"] },
       { "kanji": "さ", "romaji": ["sa"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese" 
   },
   {
     "kanji": "安い",
@@ -354,7 +389,8 @@
     "parts": [
       { "kanji": "安", "romaji": ["ya","su"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese" 
   },
   {
     "kanji": "大きい",
@@ -364,7 +400,8 @@
       { "kanji": "大", "romaji": ["o","o"] },
       { "kanji": "き", "romaji": ["ki"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese" 
   },
   {
     "kanji": "楽しい",
@@ -374,7 +411,8 @@
       { "kanji": "楽", "romaji": ["ta","no"] },
       { "kanji": "し", "romaji": ["shi"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese" 
   },
   {
     "kanji": "強い",
@@ -383,7 +421,8 @@
     "parts": [
       { "kanji": "強", "romaji": ["tsu","yo"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese" 
   },
   {
     "kanji": "弱い",
@@ -392,7 +431,8 @@
     "parts": [
       { "kanji": "弱", "romaji": ["yo","wa"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese" 
   },
   {
     "kanji": "明るい",
@@ -402,7 +442,8 @@
       { "kanji": "明", "romaji": ["a","ka"] },
       { "kanji": "る", "romaji": ["ru"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese" 
   },
   {
     "kanji": "暗い",
@@ -411,7 +452,8 @@
     "parts": [
       { "kanji": "暗", "romaji": ["ku","ra"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese" 
   },
   {
     "kanji": "重い",
@@ -420,7 +462,8 @@
     "parts": [
       { "kanji": "重", "romaji": ["o","mo"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese" 
   },
   {
     "kanji": "軽い",
@@ -429,7 +472,8 @@
     "parts": [
       { "kanji": "軽", "romaji": ["ka","ru"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese" 
   },
   {
     "kanji": "早い",
@@ -438,7 +482,8 @@
     "parts": [
       { "kanji": "早", "romaji": ["ha","ya"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese" 
   },
   {
     "kanji": "遅い",
@@ -447,7 +492,8 @@
     "parts": [
       { "kanji": "遅", "romaji": ["o","so"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese" 
   },
   {
     "kanji": "痛い",
@@ -456,7 +502,8 @@
     "parts": [
       { "kanji": "痛", "romaji": ["i","ta"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese" 
   },
   {
     "kanji": "広がった",
@@ -467,7 +514,8 @@
       { "kanji": "が", "romaji": ["ga"] },
       { "kanji": "っ", "romaji": ["t"] },
       { "kanji": "た", "romaji": ["ta"] }
-    ]
+    ],
+    "language": "japanese" 
   },
   {
     "kanji": "苦い",
@@ -476,7 +524,8 @@
     "parts": [
       { "kanji": "苦", "romaji": ["ni","ga"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese" 
   },
   {
     "kanji": "甘い",
@@ -485,7 +534,8 @@
     "parts": [
       { "kanji": "甘", "romaji": ["a","ma"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese" 
   },
   {
     "kanji": "固い",
@@ -494,7 +544,8 @@
     "parts": [
       { "kanji": "固", "romaji": ["ka","ta"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese" 
   },
   {
     "kanji": "柔らかい",
@@ -505,7 +556,8 @@
       { "kanji": "ら", "romaji": ["ra"] },
       { "kanji": "か", "romaji": ["ka"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese" 
   },
   {
     "kanji": "珍しい",
@@ -515,7 +567,8 @@
       { "kanji": "珍", "romaji": ["me","zu","ra"] },
       { "kanji": "し", "romaji": ["shi"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese" 
   },
   {
     "kanji": "怖い",
@@ -524,7 +577,8 @@
     "parts": [
       { "kanji": "怖", "romaji": ["ko","wa"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese" 
   },
   {
     "kanji": "煩い",
@@ -533,7 +587,8 @@
     "parts": [
       { "kanji": "煩", "romaji": ["u","ru","sa"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese" 
   },
   {
     "kanji": "静か",
@@ -542,7 +597,8 @@
     "parts": [
       { "kanji": "静", "romaji": ["shi","zu"] },
       { "kanji": "か", "romaji": ["ka"] }
-    ]
+    ],
+    "language": "japanese" 
   },
   {
     "kanji": "暑い",
@@ -551,7 +607,8 @@
     "parts": [
       { "kanji": "暑", "romaji": ["a","tsu"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese" 
   },
   {
     "kanji": "冷たい",
@@ -561,7 +618,8 @@
       { "kanji": "冷", "romaji": ["ts","u","me"] },
       { "kanji": "た", "romaji": ["ta"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese" 
   },
   {
     "kanji": "汚れた",
@@ -581,7 +639,8 @@
       { "kanji": "美", "romaji": ["u","tsu","ku"] },
       { "kanji": "し", "romaji": ["shi"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese" 
   },
   {
     "kanji": "楽な",
@@ -590,7 +649,8 @@
     "parts": [
       { "kanji": "楽", "romaji": ["ra", "ku"] },
       { "kanji": "な", "romaji": ["na"] }
-    ]
+    ],
+    "language": "japanese" 
   },
   {
     "kanji": "偉い",
@@ -599,6 +659,7 @@
     "parts": [
       { "kanji": "偉", "romaji": ["e","ra"] },
       { "kanji": "い", "romaji": ["i"] }
-    ]
+    ],
+    "language": "japanese" 
   }
 ]

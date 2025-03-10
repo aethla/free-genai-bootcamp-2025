@@ -1,0 +1,45 @@
+[
+  {
+    "original_text": "خرج",
+    "transliteration": "khurj",
+    "english": "to go out",
+    "parts": [
+      {"original_text": "خ", "transliteration": ["kh"]},
+      {"original_text": "ر", "transliteration": ["r"]},
+      {"original_text": "ج", "transliteration": ["j"]}
+    ],
+    "language": "arabic"
+  },
+  {
+    "original_text": "أخذ",
+    "transliteration": "a7kaz",
+    "english": "to take",
+    "parts": [
+      {"original_text": "أ", "transliteration": ["a"]},
+      {"original_text": "خ", "transliteration": ["kh"]},
+      {"original_text": "ذ", "transliteration": ["d"]}
+    ],
+    "language": "arabic"
+  },
+  {
+    "original_text": "حب",
+    "transliteration": "hab",
+    "english": "to love", 
+    "parts": [  
+      {"original_text": "ح", "transliteration": ["h"]},
+      {"original_text": "ب", "transliteration": ["b"]}
+    ],
+    "language": "arabic"
+  },
+  {
+    "original_text": "درس",
+    "transliteration": "dars",
+    "english": "to study", 
+    "parts": [  
+      {"original_text": "د", "transliteration": ["d"]},
+      {"original_text": "ر", "transliteration": ["r"]},
+      {"original_text": "س", "transliteration": ["s"]}
+    ],
+    "language": "arabic"
+  }
+] 
