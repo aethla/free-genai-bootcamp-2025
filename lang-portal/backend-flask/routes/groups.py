@@ -3,7 +3,7 @@ from flask_cors import cross_origin
 import json
 
 def load(app):
-  @app.route('/groups', methods=['GET'])
+  @app.route('/groups', methods=['GET'])###################################################
   @cross_origin()
   def get_groups():
     try:
@@ -58,7 +58,7 @@ def load(app):
     except Exception as e:
       return jsonify({"error": str(e)}), 500
 
-  @app.route('/groups/<int:id>', methods=['GET'])
+  @app.route('/groups/<int:id>', methods=['GET'])###########################################
   @cross_origin()
   def get_group(id):
     try:
@@ -83,7 +83,7 @@ def load(app):
     except Exception as e:
       return jsonify({"error": str(e)}), 500
 
-  @app.route('/groups/<int:id>/words', methods=['GET'])
+  @app.route('/groups/<int:id>/words', methods=['GET'])#####################################
   @cross_origin()
   def get_group_words(id):
     try:
@@ -95,13 +95,13 @@ def load(app):
       offset = (page - 1) * words_per_page
 
       # Get sorting parameters
-      sort_by = request.args.get('sort_by', 'kanji')
+      sort_by = request.args.get('sort_by', 'original_text')
       order = request.args.get('order', 'asc')
 
       # Validate sort parameters
-      valid_columns = ['kanji', 'romaji', 'english', 'correct_count', 'wrong_count']
+      valid_columns = ['original_text', 'transliteration', 'english', 'correct_count', 'wrong_count']
       if sort_by not in valid_columns:
-        sort_by = 'kanji'
+        sort_by = 'original_text'
       if order not in ['asc', 'desc']:
         order = 'asc'
 
@@ -140,8 +140,8 @@ def load(app):
       for word in words:
         words_data.append({
           "id": word["id"],
-          "kanji": word["kanji"],
-          "romaji": word["romaji"],
+          "original_text": word["original_text"],
+          "transliteration": word["transliteration"],
           "english": word["english"],
           "correct_count": word["correct_count"],
           "wrong_count": word["wrong_count"]
@@ -155,7 +155,7 @@ def load(app):
     except Exception as e:
       return jsonify({"error": str(e)}), 500
 
-  @app.route('/groups/<int:id>/words/raw', methods=['GET'])
+  @app.route('/groups/<int:id>/words/raw', methods=['GET'])#################################
   @cross_origin()
   def get_group_words_raw(id):
     try:
@@ -188,8 +188,8 @@ def load(app):
       for row in data:
         word = {
           "id": row["id"],
-          "kanji": row["kanji"],
-          "romaji": row["romaji"],
+          "original_text": row["original_text"],
+          "transliteration": row["transliteration"],
           "english": row["english"],
           "parts": json.loads(row["parts"])  # Deserialize 'parts' field
         }
@@ -199,7 +199,7 @@ def load(app):
     except Exception as e:
       return jsonify({"error": str(e)}), 500
 
-  @app.route('/groups/<int:id>/study_sessions', methods=['GET'])
+  @app.route('/groups/<int:id>/study_sessions', methods=['GET'])###########################
   @cross_origin()
   def get_group_study_sessions(id):
     try:
