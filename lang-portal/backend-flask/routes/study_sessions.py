@@ -56,56 +56,60 @@ def load(app):
   def get_study_sessions():
     try:
       cursor = app.db.cursor()
+      language = request.args.get('language', 'japanese')  # Add language parameter
       
       # Get pagination parameters
       page = request.args.get('page', 1, type=int)
       per_page = request.args.get('per_page', 10, type=int)
       offset = (page - 1) * per_page
 
-      # Get total count
+      # Update total count to consider language
       cursor.execute('''
-        SELECT COUNT(*) as count 
-        FROM study_sessions ss
-        JOIN groups g ON g.id = ss.group_id
-        JOIN study_activities sa ON sa.id = ss.study_activity_id
-      ''')
+          SELECT COUNT(DISTINCT ss.id) as count 
+          FROM study_sessions ss
+          JOIN word_review_items wri ON wri.study_session_id = ss.id
+          JOIN words w ON wri.word_id = w.id
+          WHERE w.language = ?
+      ''', (language,))
       total_count = cursor.fetchone()['count']
 
-      # Get paginated sessions
+      # Update sessions query to show language-specific review counts
       cursor.execute('''
-        SELECT 
-          ss.id,
-          ss.group_id,
-          g.name as group_name,
-          sa.id as activity_id,
-          sa.name as activity_name,
-          ss.created_at,
-          COUNT(wri.id) as review_items_count
-        FROM study_sessions ss
-        JOIN groups g ON g.id = ss.group_id
-        JOIN study_activities sa ON sa.id = ss.study_activity_id
-        LEFT JOIN word_review_items wri ON wri.study_session_id = ss.id
-        GROUP BY ss.id
-        ORDER BY ss.created_at DESC
-        LIMIT ? OFFSET ?
-      ''', (per_page, offset))
+          SELECT 
+              ss.id,
+              ss.group_id,
+              g.name as group_name,
+              sa.id as activity_id,
+              sa.name as activity_name,
+              ss.created_at,
+              COUNT(DISTINCT CASE WHEN w.language = ? THEN wri.id END) as review_items_count
+          FROM study_sessions ss
+          JOIN groups g ON g.id = ss.group_id
+          JOIN study_activities sa ON sa.id = ss.study_activity_id
+          LEFT JOIN word_review_items wri ON wri.study_session_id = ss.id
+          LEFT JOIN words w ON wri.word_id = w.id
+          GROUP BY ss.id, ss.group_id, g.name, sa.id, sa.name, ss.created_at
+          ORDER BY ss.created_at DESC
+          LIMIT ? OFFSET ?
+      ''', (language, per_page, offset))
+      
       sessions = cursor.fetchall()
 
       return jsonify({
-        'items': [{
-          'id': session['id'],
-          'group_id': session['group_id'],
-          'group_name': session['group_name'],
-          'activity_id': session['activity_id'],
-          'activity_name': session['activity_name'],
-          'start_time': session['created_at'],
-          'end_time': session['created_at'],  # For now, just use the same time since we don't track end time
-          'review_items_count': session['review_items_count']
-        } for session in sessions],
-        'total': total_count,
-        'page': page,
-        'per_page': per_page,
-        'total_pages': math.ceil(total_count / per_page)
+          'items': [{
+              'id': session['id'],
+              'group_id': session['group_id'],
+              'group_name': session['group_name'],
+              'activity_id': session['activity_id'],
+              'activity_name': session['activity_name'],
+              'start_time': session['created_at'],
+              'end_time': session['created_at'],  # For now, just use the same time
+              'review_items_count': session['review_items_count']
+          } for session in sessions],
+          'total': total_count,
+          'page': page,
+          'per_page': per_page,
+          'total_pages': math.ceil(total_count / per_page)
       })
     except Exception as e:
       return jsonify({"error": str(e)}), 500

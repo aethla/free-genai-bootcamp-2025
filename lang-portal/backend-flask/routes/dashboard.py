@@ -1,4 +1,4 @@
-from flask import jsonify
+from flask import jsonify, request
 from flask_cors import cross_origin
 from datetime import datetime, timedelta
 
@@ -48,17 +48,22 @@ def load(app):
     def get_study_stats():
         try:
             cursor = app.db.cursor()
+            # Add language parameter
+            language = request.args.get('language', 'japanese')
             
-            # Get total vocabulary count
-            cursor.execute('SELECT COUNT(*) as total_vocabulary FROM words')
+            # Update vocabulary count query with language filter
+            cursor.execute('SELECT COUNT(*) as total_vocabulary FROM words WHERE language = ?', 
+                          (language,))
             total_vocabulary = cursor.fetchone()["total_vocabulary"]
 
-            # Get total unique words studied
+            # Update studied words query with language filter
             cursor.execute('''
-                SELECT COUNT(DISTINCT word_id) as total_words
+                SELECT COUNT(DISTINCT wri.word_id) as total_words
                 FROM word_review_items wri
+                JOIN words w ON wri.word_id = w.id
                 JOIN study_sessions ss ON wri.study_session_id = ss.id
-            ''')
+                WHERE w.language = ?
+            ''', (language,))
             total_words = cursor.fetchone()["total_words"]
             
             # Get mastered words (words with >80% success rate and at least 5 attempts)

@@ -88,6 +88,7 @@ def load(app):
   def get_group_words(id):
     try:
       cursor = app.db.cursor()
+      language = request.args.get('language', 'japanese')  # Add language parameter
       
       # Get pagination parameters
       page = int(request.args.get('page', 1))
@@ -111,7 +112,7 @@ def load(app):
       if not group:
         return jsonify({"error": "Group not found"}), 404
 
-      # Query to fetch words with pagination and sorting
+      # Update query to include language filter
       cursor.execute(f'''
         SELECT w.*, 
                COALESCE(wr.correct_count, 0) as correct_count,
@@ -119,19 +120,20 @@ def load(app):
         FROM words w
         JOIN word_groups wg ON w.id = wg.word_id
         LEFT JOIN word_reviews wr ON w.id = wr.word_id
-        WHERE wg.group_id = ?
+        WHERE wg.group_id = ? AND w.language = ?
         ORDER BY {sort_by} {order}
         LIMIT ? OFFSET ?
-      ''', (id, words_per_page, offset))
+      ''', (id, language, words_per_page, offset))
       
       words = cursor.fetchall()
 
-      # Get total words count for pagination
+      # Update total words count query to include language filter
       cursor.execute('''
         SELECT COUNT(*) 
-        FROM word_groups 
-        WHERE group_id = ?
-      ''', (id,))
+        FROM word_groups wg
+        JOIN words w ON w.id = wg.word_id
+        WHERE wg.group_id = ? AND w.language = ?
+      ''', (id, language))
       total_words = cursor.fetchone()[0]
       total_pages = (total_words + words_per_page - 1) // words_per_page
 
@@ -160,6 +162,7 @@ def load(app):
   def get_group_words_raw(id):
     try:
       cursor = app.db.cursor()
+      language = request.args.get('language', 'japanese')  # Add language parameter
 
       # First, check if the group exists
       cursor.execute('SELECT name FROM groups WHERE id = ?', (id,))
@@ -167,21 +170,21 @@ def load(app):
       if not group:
         return jsonify({"error": "Group not found"}), 404
 
-      # SQL query to fetch words along with group information
+      # Update SQL query to fetch words with language filter
       cursor.execute('''
         SELECT g.id as group_id, g.name as group_name, w.*
         FROM groups g
         JOIN word_groups wg ON g.id = wg.group_id
         JOIN words w ON w.id = wg.word_id
-        WHERE g.id = ?;
-      ''', (id,))
+        WHERE g.id = ? AND w.language = ?
+      ''', (id, language))
       
       data = cursor.fetchall()
       
       # Format the response
       result = {
         "group_id": id,
-        "group_name": data[0]["group_name"] if data else group["name"],
+        "group_name": group["name"],
         "words": []
       }
       
@@ -191,7 +194,8 @@ def load(app):
           "original_text": row["original_text"],
           "transliteration": row["transliteration"],
           "english": row["english"],
-          "parts": json.loads(row["parts"])  # Deserialize 'parts' field
+          "parts": json.loads(row["parts"]),
+          "language": row["language"]  # Include language in response
         }
         result["words"].append(word)
       
