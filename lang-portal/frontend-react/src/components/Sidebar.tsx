@@ -14,6 +14,8 @@ import {
   SidebarMenuItem,
   SidebarRail,
 } from "@/components/ui/sidebar"
+import { LanguageSelector } from "./language-selector"
+import { useLanguage } from "@/context/LanguageContext"
 
 const navItems = [
   { icon: Home, name: 'Dashboard', path: '/dashboard' },
@@ -24,8 +26,14 @@ const navItems = [
   { icon: Settings, name: 'Settings', path: '/settings' },
 ]
 
+const languages = [
+  { code: 'japanese', name: 'Japanese', nativeName: '日本語' },
+  { code: 'arabic', name: 'Arabic', nativeName: 'العربية' }
+] 
+
 export default function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   const location = useLocation()
+  const { language, setLanguage } = useLanguage()
   
   const isActive = (path: string) => {
     // Handle root path
@@ -42,6 +50,13 @@ export default function AppSidebar({ ...props }: React.ComponentProps<typeof Sid
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupContent>
+            <LanguageSelector 
+              languages={languages}
+              defaultLanguage={language}
+              onLanguageChange={(langCode) => {
+                setLanguage(langCode as 'japanese' | 'arabic')
+              }}
+            />
             <SidebarMenu>
               {navItems.map((item) => (
                 <SidebarMenuItem key={item.name}>
