@@ -1,0 +1,112 @@
+---
+description: Anytime the codebase is edited by cursor ai
+globs: 
+---
+# Coding Rules and Best Practices
+
+## General Guidelines
+1. Write clear, self-documenting code with meaningful variable and function names
+2. Keep functions small and focused on a single responsibility
+3. Use consistent code formatting and indentation
+4. Comment complex logic or non-obvious code sections
+5. Follow the DRY (Don't Repeat Yourself) principle
+6. Write unit tests for critical functionality
+7. Handle errors gracefully with appropriate error messages
+8. Use type hints where applicable
+9. Keep dependencies up to date and documented
+
+## Git Practices
+1. Write clear, descriptive commit messages
+2. Create feature branches for new development
+3. Keep commits atomic and focused
+4. Review code before merging to main branch
+5. Use meaningful branch names (e.g., feature/, bugfix/, hotfix/)
+6. Keep the main branch stable and production-ready
+
+## Project Structure
+1. Organize code into logical modules and packages
+2. Follow a consistent project structure
+3. Keep configuration separate from code
+4. Use environment variables for sensitive data
+5. Maintain a clear separation of concerns
+
+## Documentation
+1. Keep README.md up to date
+2. Document API endpoints and their usage
+3. Include setup instructions for new developers
+4. Document environment variables and configuration
+5. Keep inline documentation current
+
+## Security
+1. Never commit sensitive data or credentials
+2. Use secure coding practices
+3. Validate user input
+4. Keep dependencies updated for security patches
+5. Follow OWASP security guidelines
+
+## Performance
+1. Optimize database queries
+2. Use appropriate data structures
+3. Implement caching where beneficial
+4. Monitor and profile code performance
+5. Handle resource cleanup properly
+
+## Testing
+1. Write unit tests for new features
+2. Maintain test coverage above 80%
+3. Include integration tests for critical paths
+4. Use meaningful test names
+5. Mock external dependencies in tests
+
+## Code Review
+1. Review code for:
+   - Functionality
+   - Security
+   - Performance
+   - Maintainability
+   - Test coverage
+2. Provide constructive feedback
+3. Address all review comments
+4. Keep review cycles focused and efficient
+
+## Deployment
+1. Use CI/CD pipelines
+2. Implement proper logging
+3. Monitor application health
+4. Have rollback procedures
+5. Document deployment processes
+
+## Accessibility
+1. Follow WCAG guidelines
+2. Ensure keyboard navigation works
+3. Provide alt text for images
+4. Use semantic HTML
+5. Test with screen readers
+
+## Mobile Responsiveness
+1. Design for mobile-first
+2. Test on multiple devices
+3. Ensure touch targets are appropriately sized
+4. Optimize images for mobile
+5. Use responsive design patterns
+
+## API Design
+1. Follow RESTful conventions
+2. Version APIs appropriately
+3. Use consistent error responses
+4. Document rate limits
+5. Implement proper authentication
+
+## Error Handling
+1. Use appropriate error types
+2. Log errors with context
+3. Provide user-friendly error messages
+4. Implement proper error recovery
+5. Monitor error rates
+
+## Code Quality
+1. Use linters and formatters
+2. Address technical debt promptly
+3. Refactor when necessary
+4. Follow SOLID principles
+5. Maintain consistent code style 
