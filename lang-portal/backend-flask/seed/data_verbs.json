@@ -10,621 +10,621 @@
     "language": "japanese"
   },
   {
-    "kanji": "払う",
-    "romaji": "harau",
+    "original_text": "払う",
+    "transliteration": "harau",
     "english": "to pay",
     "parts": [
-      { "kanji": "払", "romaji": ["ha","ra"] },
-      { "kanji": "う", "romaji": ["u"] }
+      { "original_text": "払", "transliteration": ["ha","ra"] },
+      { "original_text": "う", "transliteration": ["u"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "行く",
-    "romaji": "iku",
+    "original_text": "行く",
+    "transliteration": "iku",
     "english": "to go",
     "parts": [
-      { "kanji": "行", "romaji": ["i"] },
-      { "kanji": "く", "romaji": ["ku"] }
+      { "original_text": "行", "transliteration": ["i"] },
+      { "original_text": "く", "transliteration": ["ku"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "運動する",
-    "romaji": "undousuru",
+    "original_text": "運動する",
+    "transliteration": "undousuru",
     "english": "to exercise",
     "parts": [
-      { "kanji": "運", "romaji": ["un"] },
-      { "kanji": "動", "romaji": ["do","u"] },
-      { "kanji": "す", "romaji": ["su"] },
-      { "kanji": "る", "romaji": ["ru"] }
+      { "original_text": "運", "transliteration": ["un"] },
+      { "original_text": "動", "transliteration": ["do","u"] },
+      { "original_text": "す", "transliteration": ["su"] },
+      { "original_text": "る", "transliteration": ["ru"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "起きる",
-    "romaji": "okiru",
+    "original_text": "起きる",
+    "transliteration": "okiru",
     "english": "to wake up",
     "parts": [
-      { "kanji": "起", "romaji": ["o"] },
-      { "kanji": "き", "romaji": ["ki"] },
-      { "kanji": "る", "romaji": ["ru"] }
+      { "original_text": "起", "transliteration": ["o"] },
+      { "original_text": "き", "transliteration": ["ki"] },
+      { "original_text": "る", "transliteration": ["ru"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "買い物する",
-    "romaji": "kaimonosuru",
+    "original_text": "買い物する",
+    "transliteration": "kaimonosuru",
     "english": "to shop",
     "parts": [
-      { "kanji": "買", "romaji": ["ka"] },
-      { "kanji": "い", "romaji": ["i"] },
-      { "kanji": "物", "romaji": ["mo", "no"] },
-      { "kanji": "す", "romaji": ["su"] },
-      { "kanji": "る", "romaji": ["ru"] }
+      { "original_text": "買", "transliteration": ["ka"] },
+      { "original_text": "い", "transliteration": ["i"] },
+      { "original_text": "物", "transliteration": ["mo", "no"] },
+      { "original_text": "す", "transliteration": ["su"] },
+      { "original_text": "る", "transliteration": ["ru"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "帰る",
-    "romaji": "kaeru",
+    "original_text": "帰る",
+    "transliteration": "kaeru",
     "english": "to return",
     "parts": [
-      { "kanji": "帰", "romaji": ["ka", "e"] },
-      { "kanji": "る", "romaji": ["ru"] }
+      { "original_text": "帰", "transliteration": ["ka", "e"] },
+      { "original_text": "る", "transliteration": ["ru"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "書く",
-    "romaji": "kaku",
+    "original_text": "書く",
+    "transliteration": "kaku",
     "english": "to write",
     "parts": [
-      { "kanji": "書", "romaji": ["ka"] },
-      { "kanji": "く", "romaji": ["ku"] }
+      { "original_text": "書", "transliteration": ["ka"] },
+      { "original_text": "く", "transliteration": ["ku"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "観光する",
-    "romaji": "kankousuru",
+    "original_text": "観光する",
+    "transliteration": "kankousuru",
     "english": "to sightsee",
     "parts": [
-      { "kanji": "観", "romaji": ["kan"] },
-      { "kanji": "光", "romaji": ["kou"] },
-      { "kanji": "す", "romaji": ["su"] },
-      { "kanji": "る", "romaji": ["ru"] }
+      { "original_text": "観", "transliteration": ["kan"] },
+      { "original_text": "光", "transliteration": ["kou"] },
+      { "original_text": "す", "transliteration": ["su"] },
+      { "original_text": "る", "transliteration": ["ru"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "聞く",
-    "romaji": "kiku",
+    "original_text": "聞く",
+    "transliteration": "kiku",
     "english": "to listen",
     "parts": [
-      { "kanji": "聞", "romaji": ["ki"] },
-      { "kanji": "く", "romaji": ["ku"] }
+      { "original_text": "聞", "transliteration": ["ki"] },
+      { "original_text": "く", "transliteration": ["ku"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "来る",
-    "romaji": "kuru",
+    "original_text": "来る",
+    "transliteration": "kuru",
     "english": "to come",
     "parts": [
-      { "kanji": "来", "romaji": ["ku"] },
-      { "kanji": "る", "romaji": ["ru"] }
+      { "original_text": "来", "transliteration": ["ku"] },
+      { "original_text": "る", "transliteration": ["ru"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "する",
-    "romaji": "suru",
+    "original_text": "する",
+    "transliteration": "suru",
     "english": "to do",
     "parts": [
-      { "kanji": "す", "romaji": ["su"] },
-      { "kanji": "る", "romaji": ["ru"] }
+      { "original_text": "す", "transliteration": ["su"] },
+      { "original_text": "る", "transliteration": ["ru"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "寝る",
-    "romaji": "neru",
+    "original_text": "寝る",
+    "transliteration": "neru",
     "english": "to sleep",
     "parts": [
-      { "kanji": "寝", "romaji": ["ne"] },
-      { "kanji": "る", "romaji": ["ru"] }
+      { "original_text": "寝", "transliteration": ["ne"] },
+      { "original_text": "る", "transliteration": ["ru"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "飲む",
-    "romaji": "nomu",
+    "original_text": "飲む",
+    "transliteration": "nomu",
     "english": "to drink",
     "parts": [
-      { "kanji": "飲", "romaji": ["no"] },
-      { "kanji": "む", "romaji": ["mu"] }
+      { "original_text": "飲", "transliteration": ["no"] },
+      { "original_text": "む", "transliteration": ["mu"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "乗る",
-    "romaji": "noru",
+    "original_text": "乗る",
+    "transliteration": "noru",
     "english": "to ride",
     "parts": [
-      { "kanji": "乗", "romaji": ["no"] },
-      { "kanji": "る", "romaji": ["ru"] }
+      { "original_text": "乗", "transliteration": ["no"] },
+      { "original_text": "る", "transliteration": ["ru"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "話す",
-    "romaji": "hanasu",
+    "original_text": "話す",
+    "transliteration": "hanasu",
     "english": "to speak",
     "parts": [
-      { "kanji": "話", "romaji": ["ha", "na"] },
-      { "kanji": "す", "romaji": ["su"] }
+      { "original_text": "話", "transliteration": ["ha", "na"] },
+      { "original_text": "す", "transliteration": ["su"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "勉強する",
-    "romaji": "benkyousuru",
+    "original_text": "勉強する",
+    "transliteration": "benkyousuru",
     "english": "to study",
     "parts": [
-      { "kanji": "勉", "romaji": ["be","n"] },
-      { "kanji": "強", "romaji": ["kyo","u"] },
-      { "kanji": "す", "romaji": ["su"] },
-      { "kanji": "る", "romaji": ["ru"] }
+      { "original_text": "勉", "transliteration": ["be","n"] },
+      { "original_text": "強", "transliteration": ["kyo","u"] },
+      { "original_text": "す", "transliteration": ["su"] },
+      { "original_text": "る", "transliteration": ["ru"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "見る",
-    "romaji": "miru",
+    "original_text": "見る",
+    "transliteration": "miru",
     "english": "to see",
     "parts": [
-      { "kanji": "見", "romaji": ["mi"] },
-      { "kanji": "る", "romaji": ["ru"] }
+      { "original_text": "見", "transliteration": ["mi"] },
+      { "original_text": "る", "transliteration": ["ru"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "読む",
-    "romaji": "yomu",
+    "original_text": "読む",
+    "transliteration": "yomu",
     "english": "to read",
     "parts": [
-      { "kanji": "読", "romaji": ["yo"] },
-      { "kanji": "む", "romaji": ["mu"] }
+      { "original_text": "読", "transliteration": ["yo"] },
+      { "original_text": "む", "transliteration": ["mu"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "掛ける",
-    "romaji": "kakeru",
+    "original_text": "掛ける",
+    "transliteration": "kakeru",
     "english": "to hang; to call (phone)",
     "parts": [
-      { "kanji": "掛", "romaji": ["ka"] },
-      { "kanji": "け", "romaji": ["ke"] },
-      { "kanji": "る", "romaji": ["ru"] }
+      { "original_text": "掛", "transliteration": ["ka"] },
+      { "original_text": "け", "transliteration": ["ke"] },
+      { "original_text": "る", "transliteration": ["ru"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "借りる",
-    "romaji": "kariru",
+    "original_text": "借りる",
+    "transliteration": "kariru",
     "english": "to borrow",
     "parts": [
-      { "kanji": "借", "romaji": ["ka", "ri"] },
-      { "kanji": "る", "romaji": ["ru"] }
+      { "original_text": "借", "transliteration": ["ka", "ri"] },
+      { "original_text": "る", "transliteration": ["ru"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "貸す",
-    "romaji": "kasu",
+    "original_text": "貸す",
+    "transliteration": "kasu",
     "english": "to lend",
     "parts": [
-      { "kanji": "貸", "romaji": ["ka"] },
-      { "kanji": "す", "romaji": ["su"] }
+      { "original_text": "貸", "transliteration": ["ka"] },
+      { "original_text": "す", "transliteration": ["su"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "習う",
-    "romaji": "narau",
+    "original_text": "習う",
+    "transliteration": "narau",
     "english": "to learn",
     "parts": [
-      { "kanji": "習", "romaji": ["na", "ra"] },
-      { "kanji": "う", "romaji": ["u"] }
+      { "original_text": "習", "transliteration": ["na", "ra"] },
+      { "original_text": "う", "transliteration": ["u"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "教える",
-    "romaji": "oshieru",
+    "original_text": "教える",
+    "transliteration": "oshieru",
     "english": "to teach",
     "parts": [
-      { "kanji": "教", "romaji": ["o", "shi"] },
-      { "kanji": "え", "romaji": ["e"] },
-      { "kanji": "る", "romaji": ["ru"] }
+      { "original_text": "教", "transliteration": ["o", "shi"] },
+      { "original_text": "え", "transliteration": ["e"] },
+      { "original_text": "る", "transliteration": ["ru"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "もらう",
-    "romaji": "morau",
+    "original_text": "もらう",
+    "transliteration": "morau",
     "english": "to receive",
     "parts": [
-      { "kanji": "も", "romaji": ["mo"] },
-      { "kanji": "ら", "romaji": ["ra"] },
-      { "kanji": "う", "romaji": ["u"] }
+      { "original_text": "も", "transliteration": ["mo"] },
+      { "original_text": "ら", "transliteration": ["ra"] },
+      { "original_text": "う", "transliteration": ["u"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "あげる",
-    "romaji": "ageru",
+    "original_text": "あげる",
+    "transliteration": "ageru",
     "english": "to give",
     "parts": [
-      { "kanji": "あ", "romaji": ["a"] },
-      { "kanji": "げ", "romaji": ["ge"] },
-      { "kanji": "る", "romaji": ["ru"] }
+      { "original_text": "あ", "transliteration": ["a"] },
+      { "original_text": "げ", "transliteration": ["ge"] },
+      { "original_text": "る", "transliteration": ["ru"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "会う",
-    "romaji": "au",
+    "original_text": "会う",
+    "transliteration": "au",
     "english": "to meet",
     "parts": [
-      { "kanji": "会", "romaji": ["a"] },
-      { "kanji": "う", "romaji": ["u"] }
+      { "original_text": "会", "transliteration": ["a"] },
+      { "original_text": "う", "transliteration": ["u"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "下車する",
-    "romaji": "geshasuru",
+    "original_text": "下車する",
+    "transliteration": "geshasuru",
     "english": "to get off (vehicle)",
     "parts": [
-      { "kanji": "下", "romaji": ["ge"] },
-      { "kanji": "車", "romaji": ["sha"] },
-      { "kanji": "す", "romaji": ["su"] },
-      { "kanji": "る", "romaji": ["ru"] }
+      { "original_text": "下", "transliteration": ["ge"] },
+      { "original_text": "車", "transliteration": ["sha"] },
+      { "original_text": "す", "transliteration": ["su"] },
+      { "original_text": "る", "transliteration": ["ru"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "始める",
-    "romaji": "hajimeru",
+    "original_text": "始める",
+    "transliteration": "hajimeru",
     "english": "to start",
     "parts": [
-      { "kanji": "始", "romaji": ["ha", "ji"] },
-      { "kanji": "め", "romaji": ["me"] },
-      { "kanji": "る", "romaji": ["ru"] }
+      { "original_text": "始", "transliteration": ["ha", "ji"] },
+      { "original_text": "め", "transliteration": ["me"] },
+      { "original_text": "る", "transliteration": ["ru"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "見せる",
-    "romaji": "miseru",
+    "original_text": "見せる",
+    "transliteration": "miseru",
     "english": "to show",
     "parts": [
-      { "kanji": "見", "romaji": ["mi"] },
-      { "kanji": "せ", "romaji": ["se"] },
-      { "kanji": "る", "romaji": ["ru"] }
+      { "original_text": "見", "transliteration": ["mi"] },
+      { "original_text": "せ", "transliteration": ["se"] },
+      { "original_text": "る", "transliteration": ["ru"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "降りる",
-    "romaji": "oriru",
+    "original_text": "降りる",
+    "transliteration": "oriru",
     "english": "to get off",
     "parts": [
-      { "kanji": "降", "romaji": ["o", "ri"] },
-      { "kanji": "る", "romaji": ["ru"] }
+      { "original_text": "降", "transliteration": ["o", "ri"] },
+      { "original_text": "る", "transliteration": ["ru"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "止める",
-    "romaji": "tomeru",
+    "original_text": "止める",
+    "transliteration": "tomeru",
     "english": "to stop",
     "parts": [
-      { "kanji": "止", "romaji": ["to"] },
-      { "kanji": "め", "romaji": ["me"] },
-      { "kanji": "る", "romaji": ["ru"] }
+      { "original_text": "止", "transliteration": ["to"] },
+      { "original_text": "め", "transliteration": ["me"] },
+      { "original_text": "る", "transliteration": ["ru"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "消す",
-    "romaji": "kesu",
+    "original_text": "消す",
+    "transliteration": "kesu",
     "english": "to turn off; to erase",
     "parts": [
-      { "kanji": "消", "romaji": ["ke"] },
-      { "kanji": "す", "romaji": ["su"] }
+      { "original_text": "消", "transliteration": ["ke"] },
+      { "original_text": "す", "transliteration": ["su"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "つける",
-    "romaji": "tsukeru",
+    "original_text": "つける",
+    "transliteration": "tsukeru",
     "english": "to turn on",
     "parts": [
-      { "kanji": "つ", "romaji": ["tsu"] },
-      { "kanji": "け", "romaji": ["ke"] },
-      { "kanji": "る", "romaji": ["ru"] }
+      { "original_text": "つ", "transliteration": ["tsu"] },
+      { "original_text": "け", "transliteration": ["ke"] },
+      { "original_text": "る", "transliteration": ["ru"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "急ぐ",
-    "romaji": "isogu",
+    "original_text": "急ぐ",
+    "transliteration": "isogu",
     "english": "to hurry",
     "parts": [
-      { "kanji": "急", "romaji": ["i", "so"] },
-      { "kanji": "ぐ", "romaji": ["gu"] }
+      { "original_text": "急", "transliteration": ["i", "so"] },
+      { "original_text": "ぐ", "transliteration": ["gu"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "手伝う",
-    "romaji": "tetsudau",
+    "original_text": "手伝う",
+    "transliteration": "tetsudau",
     "english": "to help",
     "parts": [
-      { "kanji": "手", "romaji": ["te"] },
-      { "kanji": "伝", "romaji": ["tsu", "da"] },
-      { "kanji": "う", "romaji": ["u"] }
+      { "original_text": "手", "transliteration": ["te"] },
+      { "original_text": "伝", "transliteration": ["tsu", "da"] },
+      { "original_text": "う", "transliteration": ["u"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "取る",
-    "romaji": "toru",
+    "original_text": "取る",
+    "transliteration": "toru",
     "english": "to take",
     "parts": [
-      { "kanji": "取", "romaji": ["to"] },
-      { "kanji": "る", "romaji": ["ru"] }
+      { "original_text": "取", "transliteration": ["to"] },
+      { "original_text": "る", "transliteration": ["ru"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "持つ",
-    "romaji": "motsu",
+    "original_text": "持つ",
+    "transliteration": "motsu",
     "english": "to hold",
     "parts": [
-      { "kanji": "持", "romaji": ["mo"] },
-      { "kanji": "つ", "romaji": ["tsu"] }
+      { "original_text": "持", "transliteration": ["mo"] },
+      { "original_text": "つ", "transliteration": ["tsu"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "待つ",
-    "romaji": "matsu",
+    "original_text": "待つ",
+    "transliteration": "matsu",
     "english": "to wait",
     "parts": [
-      { "kanji": "待", "romaji": ["ma"] },
-      { "kanji": "つ", "romaji": ["tsu"] }
+      { "original_text": "待", "transliteration": ["ma"] },
+      { "original_text": "つ", "transliteration": ["tsu"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "歩く",
-    "romaji": "aruku",
+    "original_text": "歩く",
+    "transliteration": "aruku",
     "english": "to walk",
     "parts": [
-      { "kanji": "歩", "romaji": ["a", "ru"] },
-      { "kanji": "く", "romaji": ["ku"] }
+      { "original_text": "歩", "transliteration": ["a", "ru"] },
+      { "original_text": "く", "transliteration": ["ku"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "閉める",
-    "romaji": "shimeru",
+    "original_text": "閉める",
+    "transliteration": "shimeru",
     "english": "to close",
     "parts": [
-      { "kanji": "閉", "romaji": ["shi"] },
-      { "kanji": "め", "romaji": ["me"] },
-      { "kanji": "る", "romaji": ["ru"] }
+      { "original_text": "閉", "transliteration": ["shi"] },
+      { "original_text": "め", "transliteration": ["me"] },
+      { "original_text": "る", "transliteration": ["ru"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "休む",
-    "romaji": "yasumu",
+    "original_text": "休む",
+    "transliteration": "yasumu",
     "english": "to rest",
     "parts": [
-      { "kanji": "休", "romaji": ["ya", "su"] },
-      { "kanji": "む", "romaji": ["mu"] }
+      { "original_text": "休", "transliteration": ["ya", "su"] },
+      { "original_text": "む", "transliteration": ["mu"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "終わる",
-    "romaji": "owaru",
+    "original_text": "終わる",
+    "transliteration": "owaru",
     "english": "to finish",
     "parts": [
-      { "kanji": "終", "romaji": ["o"] },
-      { "kanji": "わ", "romaji": ["wa"] },
-      { "kanji": "る", "romaji": ["ru"] }
+      { "original_text": "終", "transliteration": ["o"] },
+      { "original_text": "わ", "transliteration": ["wa"] },
+      { "original_text": "る", "transliteration": ["ru"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "働く",
-    "romaji": "hataraku",
+    "original_text": "働く",
+    "transliteration": "hataraku",
     "english": "to work",
     "parts": [
-      { "kanji": "働", "romaji": ["ha", "ta", "ra"] },
-      { "kanji": "く", "romaji": ["ku"] }
+      { "original_text": "働", "transliteration": ["ha", "ta", "ra"] },
+      { "original_text": "く", "transliteration": ["ku"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "開ける",
-    "romaji": "akeru",
+    "original_text": "開ける",
+    "transliteration": "akeru",
     "english": "to open",
     "parts": [
-      { "kanji": "開", "romaji": ["a"] },
-      { "kanji": "け", "romaji": ["ke"] },
-      { "kanji": "る", "romaji": ["ru"] }
+      { "original_text": "開", "transliteration": ["a"] },
+      { "original_text": "け", "transliteration": ["ke"] },
+      { "original_text": "る", "transliteration": ["ru"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "呼ぶ",
-    "romaji": "yobu",
+    "original_text": "呼ぶ",
+    "transliteration": "yobu",
     "english": "to call",
     "parts": [
-      { "kanji": "呼", "romaji": ["yo"] },
-      { "kanji": "ぶ", "romaji": ["bu"] }
+      { "original_text": "呼", "transliteration": ["yo"] },
+      { "original_text": "ぶ", "transliteration": ["bu"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "送る",
-    "romaji": "okuru",
+    "original_text": "送る",
+    "transliteration": "okuru",
     "english": "to send",
     "parts": [
-      { "kanji": "送", "romaji": ["o", "ku"] },
-      { "kanji": "る", "romaji": ["ru"] }
+      { "original_text": "送", "transliteration": ["o", "ku"] },
+      { "original_text": "る", "transliteration": ["ru"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "切る",
-    "romaji": "kiru",
+    "original_text": "切る",
+    "transliteration": "kiru",
     "english": "to cut",
     "parts": [
-      { "kanji": "切", "romaji": ["ki"] },
-      { "kanji": "る", "romaji": ["ru"] }
+      { "original_text": "切", "transliteration": ["ki"] },
+      { "original_text": "る", "transliteration": ["ru"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "撮る",
-    "romaji": "toru",
+    "original_text": "撮る",
+    "transliteration": "toru",
     "english": "to take (a photo)",
     "parts": [
-      { "kanji": "撮", "romaji": ["to"] },
-      { "kanji": "る", "romaji": ["ru"] }
+      { "original_text": "撮", "transliteration": ["to"] },
+      { "original_text": "る", "transliteration": ["ru"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "言う",
-    "romaji": "iu",
+    "original_text": "言う",
+    "transliteration": "iu",
     "english": "to say",
     "parts": [
-      { "kanji": "言", "romaji": ["i"] },
-      { "kanji": "う", "romaji": ["u"] }
+      { "original_text": "言", "transliteration": ["i"] },
+      { "original_text": "う", "transliteration": ["u"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "見れる",
-    "romaji": "mireru",
+    "original_text": "見れる",
+    "transliteration": "mireru",
     "english": "to be able to see",
     "parts": [
-      { "kanji": "見", "romaji": ["mi"] },
-      { "kanji": "れ", "romaji": ["re"] },
-      { "kanji": "る", "romaji": ["ru"] }
+      { "original_text": "見", "transliteration": ["mi"] },
+      { "original_text": "れ", "transliteration": ["re"] },
+      { "original_text": "る", "transliteration": ["ru"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "作る",
-    "romaji": "tsukuru",
+    "original_text": "作る",
+    "transliteration": "tsukuru",
     "english": "to make",
     "parts": [
-      { "kanji": "作", "romaji": ["tsu", "ku"] },
-      { "kanji": "る", "romaji": ["ru"] }
+      { "original_text": "作", "transliteration": ["tsu", "ku"] },
+      { "original_text": "る", "transliteration": ["ru"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "使う",
-    "romaji": "tsukau",
+    "original_text": "使う",
+    "transliteration": "tsukau",
     "english": "to use",
     "parts": [
-      { "kanji": "使", "romaji": ["tsu", "ka"] },
-      { "kanji": "う", "romaji": ["u"] }
+      { "original_text": "使", "transliteration": ["tsu", "ka"] },
+      { "original_text": "う", "transliteration": ["u"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "有る",
-    "romaji": "aru",
+    "original_text": "有る",
+    "transliteration": "aru",
     "english": "to exist (inanimate)",
     "parts": [
-      { "kanji": "有", "romaji": ["a"] },
-      { "kanji": "る", "romaji": ["ru"] }
+      { "original_text": "有", "transliteration": ["a"] },
+      { "original_text": "る", "transliteration": ["ru"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "居る",
-    "romaji": "iru",
+    "original_text": "居る",
+    "transliteration": "iru",
     "english": "to exist (animate)",
     "parts": [
-      { "kanji": "居", "romaji": ["i"] },
-      { "kanji": "る", "romaji": ["ru"] }
+      { "original_text": "居", "transliteration": ["i"] },
+      { "original_text": "る", "transliteration": ["ru"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "困る",
-    "romaji": "komaru",
+    "original_text": "困る",
+    "transliteration": "komaru",
     "english": "to be troubled",
     "parts": [
-      { "kanji": "困", "romaji": ["ko", "ma"] },
-      { "kanji": "る", "romaji": ["ru"] }
+      { "original_text": "困", "transliteration": ["ko", "ma"] },
+      { "original_text": "る", "transliteration": ["ru"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "泳ぐ",
-    "romaji": "oyogu",
+    "original_text": "泳ぐ",
+    "transliteration": "oyogu",
     "english": "to swim",
     "parts": [
-      { "kanji": "泳", "romaji": ["o", "yo"] },
-      { "kanji": "ぐ", "romaji": ["gu"] }
+      { "original_text": "泳", "transliteration": ["o", "yo"] },
+      { "original_text": "ぐ", "transliteration": ["gu"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "散歩する",
-    "romaji": "sanposuru",
+    "original_text": "散歩する",
+    "transliteration": "sanposuru",
     "english": "to stroll",
     "parts": [
-      { "kanji": "散", "romaji": ["san"] },
-      { "kanji": "歩", "romaji": ["po"] },
-      { "kanji": "す", "romaji": ["su"] },
-      { "kanji": "る", "romaji": ["ru"] }
+      { "original_text": "散", "transliteration": ["san"] },
+      { "original_text": "歩", "transliteration": ["po"] },
+      { "original_text": "す", "transliteration": ["su"] },
+      { "original_text": "る", "transliteration": ["ru"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "運転する",
-    "romaji": "untensuru",
+    "original_text": "運転する",
+    "transliteration": "untensuru",
     "english": "to drive",
     "parts": [
-      { "kanji": "運", "romaji": ["un"] },
-      { "kanji": "転", "romaji": ["ten"] },
-      { "kanji": "す", "romaji": ["su"] },
-      { "kanji": "る", "romaji": ["ru"] }
+      { "original_text": "運", "transliteration": ["un"] },
+      { "original_text": "転", "transliteration": ["ten"] },
+      { "original_text": "す", "transliteration": ["su"] },
+      { "original_text": "る", "transliteration": ["ru"] }
     ],
     "language": "japanese"
   },
   {
-    "kanji": "合う",
-    "romaji": "au",
+    "original_text": "合う",
+    "transliteration": "au",
     "english": "to meet; to fit",
     "parts": [
-      { "kanji": "合", "romaji": ["a"] },
-      { "kanji": "う", "romaji": ["u"] }
+      { "original_text": "合", "transliteration": ["a"] },
+      { "original_text": "う", "transliteration": ["u"] }
     ],
     "language": "japanese"
   }
