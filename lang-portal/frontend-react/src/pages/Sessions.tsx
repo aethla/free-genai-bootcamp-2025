@@ -2,12 +2,14 @@ import React, { useState, useEffect } from 'react'
 import StudySessionsTable, { type StudySessionSortKey } from '../components/StudySessionsTable'
 import Pagination from '../components/Pagination'
 import { type StudySession, fetchStudySessions } from '../services/api'
+import { useLanguage } from "@/context/LanguageContext"
 
 export default function Sessions() {
+  const { language } = useLanguage()
   const [sessions, setSessions] = useState<StudySession[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
-  const [sortKey, setSortKey] = useState<StudySessionSortKey>('startTime')
+  const [sortKey, setSortKey] = useState<StudySessionSortKey>('start_time')
   const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('desc')
   const [currentPage, setCurrentPage] = useState(1)
   const [totalPages, setTotalPages] = useState(1)
@@ -17,7 +19,9 @@ export default function Sessions() {
     const loadSessions = async () => {
       try {
         setLoading(true)
-        const response = await fetchStudySessions(currentPage, itemsPerPage)
+        const response = await fetchStudySessions(itemsPerPage, currentPage,
+          language 
+        )
         setSessions(response.items)
         setTotalPages(response.total_pages)
       } catch (err) {
@@ -28,7 +32,7 @@ export default function Sessions() {
     }
 
     loadSessions()
-  }, [currentPage])
+  }, [currentPage, language])
 
   const handleSort = (key: StudySessionSortKey) => {
     if (key === sortKey) {

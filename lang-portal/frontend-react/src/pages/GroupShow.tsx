@@ -6,30 +6,37 @@ import {
   fetchGroupWords,
   type GroupDetails, 
   type StudySession,
-  type StudySessionSortKey,
-  type Word 
+  type Word
 } from '../services/api'
+import { useLanguage } from "@/context/LanguageContext"
 import WordsTable, { type WordSortKey } from '../components/WordsTable'
-import StudySessionsTable from '../components/StudySessionsTable'
+import StudySessionsTable , { type StudySessionSortKey } from '../components/StudySessionsTable'
 import Pagination from '../components/Pagination'
 import { useNavigation } from '../context/NavigationContext'
 
 export default function GroupShow() {
   const { id } = useParams<{ id: string }>()
+  const { language } = useLanguage()
   const [group, setGroup] = useState<GroupDetails | null>(null)
   const { setCurrentGroup } = useNavigation()
   const [words, setWords] = useState<Word[]>([])
   const [studySessions, setStudySessions] = useState<StudySession[]>([])
-  const [wordSortKey, setWordSortKey] = useState<WordSortKey>('kanji')
+  const [wordSortKey, setWordSortKey] = useState<WordSortKey>('original_text')// change 
   const [wordSortDirection, setWordSortDirection] = useState<'asc' | 'desc'>('asc')
-  const [sessionSortKey, setSessionSortKey] = useState<StudySessionSortKey>('startTime')
+  const [sessionSortKey, setSessionSortKey] = useState<StudySessionSortKey>('start_time')
   const [sessionSortDirection, setSessionSortDirection] = useState<'asc' | 'desc'>('desc')
   const [wordsPage, setWordsPage] = useState(1)
   const [sessionsPage, setSessionsPage] = useState(1)
   const [wordsTotalPages, setWordsTotalPages] = useState(1)
   const [sessionsTotalPages, setSessionsTotalPages] = useState(1)
-  const [isLoading, setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
+
+  // Reset pages when language changes
+  useEffect(() => {
+    setWordsPage(1)
+    setSessionsPage(1)
+  }, [language])
 
   useEffect(() => {
     const loadData = async () => {
@@ -45,15 +52,21 @@ export default function GroupShow() {
         const [wordsData, sessionsData] = await Promise.all([
           fetchGroupWords(
             parseInt(id, 10),
-            wordsPage,
-            wordSortKey,
-            wordSortDirection
+            {
+              page: wordsPage,
+              sortBy: wordSortKey,
+              order: wordSortDirection,
+              language
+            }
           ),
           fetchGroupStudySessions(
             parseInt(id, 10),
-            sessionsPage,
-            sessionSortKey,
-            sessionSortDirection
+            {
+              page: sessionsPage,
+              sortBy: sessionSortKey,
+              order: sessionSortDirection,
+              language
+            }
           )
         ])
         
@@ -62,7 +75,7 @@ export default function GroupShow() {
         setStudySessions(sessionsData.study_sessions)
         setSessionsTotalPages(sessionsData.total_pages)
       } catch (err) {
-        setError('Failed to load group details')
+        setError(`Failed to load ${language} group details`)
         console.error(err)
       } finally {
         setIsLoading(false)
@@ -70,7 +83,8 @@ export default function GroupShow() {
     }
 
     loadData()
-  }, [id, wordsPage, sessionsPage, wordSortKey, wordSortDirection, sessionSortKey, sessionSortDirection, setCurrentGroup])
+  }, [id, wordsPage, sessionsPage, wordSortKey, wordSortDirection, 
+      sessionSortKey, sessionSortDirection, setCurrentGroup, language])
 
   // Clean up the context when unmounting
   useEffect(() => {
@@ -108,7 +122,9 @@ export default function GroupShow() {
   return (
     <div className="space-y-6">
       <div className="flex justify-between items-center">
-        <h1 className="text-2xl font-bold text-gray-800 dark:text-white">{group.group_name}</h1>
+        <h1 className="text-2xl font-bold text-gray-800 dark:text-white">
+          {group.group_name} ({language === 'japanese' ? 'Japanese' : 'Arabic'})
+        </h1>
         <Link
           to="/groups"
           className="px-4 py-2 text-sm font-medium text-gray-600 bg-gray-100 rounded-md hover:bg-gray-200 dark:text-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600"

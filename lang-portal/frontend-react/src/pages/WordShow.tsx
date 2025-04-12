@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { fetchWordDetails, type Word } from '../services/api'
 import { useNavigation } from '../context/NavigationContext'
+import { useLanguage } from '@/context/LanguageContext'
 
 export default function WordShow() {
   const { id } = useParams<{ id: string }>()
@@ -9,6 +10,7 @@ export default function WordShow() {
   const { setCurrentWord } = useNavigation()
   const [isLoading, setIsLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
+  const { language } = useLanguage()
 
   useEffect(() => {
     const loadWord = async () => {
@@ -44,7 +46,7 @@ export default function WordShow() {
   if (error || !word) {
     return <div className="text-red-500 text-center py-4">{error || 'Word not found'}</div>
   }
-
+//maybe add in capitalization for language-->
   return (
     <div className="space-y-6">
       <div className="flex justify-between items-center">
@@ -60,13 +62,13 @@ export default function WordShow() {
       <div className="bg-white dark:bg-gray-800 rounded-lg shadow overflow-hidden">
         <div className="p-6 space-y-4">
           <div>
-            <h2 className="text-lg font-semibold text-gray-800 dark:text-white">Japanese</h2>
-            <p className="mt-1 text-3xl text-gray-600 dark:text-gray-300">{word.kanji}</p>
+            <h2 className="text-lg font-semibold text-gray-800 dark:text-white">{language}</h2> 
+            <p className="mt-1 text-3xl text-gray-600 dark:text-gray-300">{word.original_text}</p>
           </div>
 
           <div>
-            <h2 className="text-lg font-semibold text-gray-800 dark:text-white">Romaji</h2>
-            <p className="mt-1 text-xl text-gray-600 dark:text-gray-300">{word.romaji}</p>
+            <h2 className="text-lg font-semibold text-gray-800 dark:text-white">Transliteration</h2>
+            <p className="mt-1 text-xl text-gray-600 dark:text-gray-300">{word.transliteration}</p>
           </div>
 
           <div>

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import StudyActivity from '@/components/StudyActivity'
+import { useLanguage } from '@/context/LanguageContext'
 
 type ActivityCard = {
   id: number
@@ -9,12 +10,13 @@ type ActivityCard = {
 }
 
 export default function StudyActivities() {
+  const { language } = useLanguage()
   const [activities, setActivities] = useState<ActivityCard[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/study-activities')
+    fetch(`http://localhost:5000/api/study-activities?language=${language}`)
       .then(response => {
         if (!response.ok) {
           throw new Error('Failed to fetch study activities')
@@ -29,7 +31,7 @@ export default function StudyActivities() {
         setError(err.message)
         setLoading(false)
       })
-  }, [])
+  }, [language])
 
   if (loading) {
     return <div className="text-center">Loading study activities...</div>

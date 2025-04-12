@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import { useTheme } from '@/components/theme-provider'
+import { useLanguage } from '@/context/LanguageContext'
 
 export default function Settings() {
   const { theme, setTheme } = useTheme()
+  const { language, setLanguage } = useLanguage()
   const [showResetDialog, setShowResetDialog] = useState(false)
   const [resetConfirmation, setResetConfirmation] = useState('')
 
@@ -47,6 +49,18 @@ export default function Settings() {
           <option value="light">Light</option>
           <option value="dark">Dark</option>
           <option value="system">System</option>
+        </select>
+      </div>
+
+      <div className="flex items-center justify-between">
+        <span className="text-gray-700 dark:text-gray-300">Language</span>
+        <select
+          value={language}
+          onChange={(e) => setLanguage(e.target.value as 'japanese' | 'arabic')}
+          className="bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md px-3 py-1 text-gray-700 dark:text-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        >
+          <option value="japanese">Japanese</option>
+          <option value="korean">Korean</option>
         </select>
       </div>
 

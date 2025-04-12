@@ -9,6 +9,7 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import { useNavigation } from '@/context/NavigationContext'
+import { useLanguage } from '@/context/LanguageContext'
 import { createStudySession } from '@/services/api'
 
 type Group = {
@@ -32,13 +33,14 @@ export default function StudyActivityLaunch() {
   const { id } = useParams()
   const navigate = useNavigate()
   const { setCurrentStudyActivity } = useNavigation()
+  const { language } = useLanguage()
   const [launchData, setLaunchData] = useState<LaunchData | null>(null)
   const [selectedGroup, setSelectedGroup] = useState<string>('')
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/study-activities/${id}/launch`)
+    fetch(`http://localhost:5000/api/study-activities/${id}/launch?language=${language}`)
       .then(response => {
         if (!response.ok) throw new Error('Failed to fetch launch data')
         return response.json()
@@ -52,7 +54,7 @@ export default function StudyActivityLaunch() {
         setError(err.message)
         setLoading(false)
       })
-  }, [id, setCurrentStudyActivity])
+  }, [id, setCurrentStudyActivity, language])
 
   // Clean up when unmounting
   useEffect(() => {
@@ -73,6 +75,7 @@ export default function StudyActivityLaunch() {
       const launchUrl = new URL(launchData.activity.launch_url);
       launchUrl.searchParams.set('group_id', selectedGroup);
       launchUrl.searchParams.set('session_id', sessionId.toString());
+      launchUrl.searchParams.set('language', language);
       
       // Open the modified URL in a new tab
       window.open(launchUrl.toString(), '_blank');

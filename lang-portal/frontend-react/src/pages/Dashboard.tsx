@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { BookOpen, Trophy, Clock, ArrowRight, Activity } from 'lucide-react'
 import { fetchRecentStudySession, fetchStudyStats, type StudyStats, type RecentSession } from '@/services/api'
+import { useLanguage } from "@/context/LanguageContext"
 
 interface DashboardCardProps {
   title: string
@@ -23,33 +24,50 @@ function DashboardCard({ title, icon: Icon, children, className = '' }: Dashboar
 }
 
 export default function Dashboard() {
+  const { language } = useLanguage()
   const [recentSession, setRecentSession] = useState<RecentSession | null>(null)
   const [stats, setStats] = useState<StudyStats | null>(null)
-  const [isLoading, setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
     const loadDashboardData = async () => {
+      setIsLoading(true)
+      setError(null)
       try {
         const [sessionData, statsData] = await Promise.all([
           fetchRecentStudySession(),
-          fetchStudyStats()
+          fetchStudyStats(language)
         ])
         setRecentSession(sessionData)
         setStats(statsData)
       } catch (error) {
         console.error('Failed to load dashboard data:', error)
+        setError(`Failed to load ${language} dashboard data`)
+        setRecentSession(null)
+        setStats(null)
       } finally {
         setIsLoading(false)
       }
     }
 
     loadDashboardData()
-  }, [])
+  }, [language])
+
+  if (error) {
+    return (
+      <div className="text-red-500 text-center py-4">
+        {error}
+      </div>
+    )
+  }
 
   return (
     <div className="space-y-6">
       <div className="flex justify-between items-center">
-        <h1 className="text-2xl font-bold">Dashboard</h1>
+        <h1 className="text-2xl font-bold">
+          {language === 'japanese' ? 'Japanese' : 'Arabic'} Dashboard
+        </h1>
         <Link 
           to="/study-activities"
           className="inline-flex items-center gap-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"

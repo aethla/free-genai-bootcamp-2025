@@ -211,7 +211,7 @@ export interface StudySessionsResponse {
 }
 
 export async function fetchStudySessions(
-  perPage: number = 10,{ page = 1,language = 'japanese' }: FetchOptions = {}
+  perPage: number = 10, page: number =  1,language :string = 'japanese' 
 ): Promise<StudySessionsResponse> {
   const response = await fetch(
     `${API_BASE_URL}/api/study-sessions?page=${page}&per_page=${perPage}&language=${language}`
@@ -259,3 +259,6 @@ export const fetchStudyStats = async (language: string = 'japanese'): Promise<St
   }
   return response.json();
 };
+
+export type StudySessionSortKey = 'start_time' | 'end_time' | 'created_at';
+export type WordSortKey = 'original_text' | 'transliteration' | 'english' | 'correct_count' | 'wrong_count'
