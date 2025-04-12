@@ -5,6 +5,8 @@ import WordsTable from '@/components/WordsTable'
 import Pagination from '@/components/Pagination'
 import type { Word, WordSortKey } from '@/services/api'
 
+
+//might add in the language for this
 interface StudySession {
   id: number
   group_id: number
@@ -31,7 +33,7 @@ export default function StudySessionShow() {
   const [words, setWords] = useState<Word[]>([])
   const [currentPage, setCurrentPage] = useState(1)
   const [totalPages, setTotalPages] = useState(1)
-  const [sortKey, setSortKey] = useState<WordSortKey>('kanji')
+  const [sortKey, setSortKey] = useState<WordSortKey>('original_text')
   const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('asc')
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)

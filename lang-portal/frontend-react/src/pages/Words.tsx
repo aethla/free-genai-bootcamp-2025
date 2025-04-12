@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { fetchWords, type Word } from '../services/api'
 import WordsTable, { WordSortKey } from '../components/WordsTable'
+import { useLanguage } from "@/context/LanguageContext" 
 
 export default function Words() {
+  const { language } = useLanguage()
   const [words, setWords] = useState<Word[]>([])
-  const [sortKey, setSortKey] = useState<WordSortKey>('kanji')
+  const [sortKey, setSortKey] = useState<WordSortKey>('original_text')
   const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('asc')
   const [currentPage, setCurrentPage] = useState(1)
   const [totalPages, setTotalPages] = useState(1)
@@ -16,19 +18,25 @@ export default function Words() {
       setIsLoading(true)
       setError(null)
       try {
-        const response = await fetchWords(currentPage, sortKey, sortDirection)
+        const response = await fetchWords({
+          page: currentPage,
+          sortBy: sortKey,
+          order: sortDirection,
+          language
+        })
         setWords(response.words)
         setTotalPages(response.total_pages)
       } catch (err) {
         setError('Failed to load words')
         console.error(err)
+        setWords([])  // Clear words on error
       } finally {
         setIsLoading(false)
       }
     }
 
     loadWords()
-  }, [currentPage, sortKey, sortDirection])
+  }, [currentPage, sortKey, sortDirection, language])
 
   const handleSort = (key: WordSortKey) => {
     if (key === sortKey) {
